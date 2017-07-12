@@ -1,0 +1,9 @@
+
+.idea/
+
+Results/*.xml
+Results/*.html
+Results/CaptureImages/*.png
+
+Resources/debug/
+Resources/tmp/

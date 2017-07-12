@@ -1,0 +1,80 @@
+
+#public bucket
+public:
+    baseUrl: http://test1.essintra.ejudata.com:8084
+    bucket: test1
+    port: 8084
+    inner:
+      domainName: essintra.ejudata.com
+      method: POST,PUT,GET,HEAD,DELETE
+    outer:
+      domainName: ess.ejudata.com
+      method: GET,HEAD
+      baseUrl: http://test1.ess.ejudata.com:8084
+
+
+#public read and private write bucket
+priw:
+#    authorizationCode:
+#        baseUrl: http://localhost:9088/testPubAuth__
+    #test2 baseurl, key ID and secret
+    baseUrl: http://test2.essintra.ejudata.com:8084
+    bucket: test2
+    port: 8084
+    inner:
+        domainName: essintra.ejudata.com
+        #please use capital!!! PUT POST GET HEAD DELETE
+        method: POST,PUT,GET,HEAD,DELETE
+    outer:
+        domainName: ess.ejudata.com
+        method: GET,HEAD
+        baseUrl: http://test2.ess.ejudata.com:8084
+
+    # test2
+    key: a5ad00c5b27d2f674b0020e430c535f8
+    pass: 5f472a64599957f38f8bba09dc4baa24
+
+
+#private write and private read bucket
+private:
+#    authorizationCode:
+#        baseUrl: http://localhost:9088/testPriAuth__
+    #test3 baseurl, key ID and secret
+    baseUrl: http://test3.essintra.ejudata.com:8084
+    bucket: test3
+    port: 8084
+    inner:
+        domainName: essintra.ejudata.com
+        #please use capital!!! PUT POST GET HEAD DELETE
+        method: POST,PUT,GET,HEAD,DELETE
+    outer:
+        baseUrl: http://test3.ess.ejudata.com:8084
+        domainName: ess.ejudata.com
+        method: GET,HEAD
+
+    key: 3e4b174eae84587b301bdfe31ae7557b
+    pass: 91f6987f96d6d0b05fce2060d2b6ee6b
+
+#the image api url
+image:
+  baseUrl: http://test1.essintra.ejudata.com:8084
+#http://demo.ess.ejucloud.com/
+
+  imageMagick:
+    installPath: D:/ImageMagick-7.0.2-4-portable-Q16-x64
+
+  partial:
+    testfile:
+      path: \u6768\u5B97\u7EAC - \u6211\u53D8\u4E86 \u6211\u6CA1\u53D8.mp3
+
+
+
+# the pdf api url
+pdf:
+  baseUrl: http://test1.essintra.ejudata.com:8084
+
+
+# the cambodia interface wrapper url
+#cambodia.baseUrl=http://172.29.28.156:8090/
+vm:
+  baseUrl: http://10.99.70.37:8090/
